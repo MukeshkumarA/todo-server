@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    image: mukeshkumararumugam/todo-app:0.0.1
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Mukesh@999
+      logging.level.root: debug  # Enable debug logging
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.27
+    environment:
+      MYSQL_ROOT_PASSWORD: Mukesh@999
+      MYSQL_DATABASE: todo
+
