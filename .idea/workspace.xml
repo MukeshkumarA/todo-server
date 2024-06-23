@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3ceea60f-a5fd-426a-88e2-db6499e31169" name="Changes" comment="todo implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mk.todo.TodoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mk.todo.TodoApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mk.todo.TodoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mk.todo.TodoApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1719027941392" duration="5910000" />
       <workItem from="1719043340779" duration="1011000" />
       <workItem from="1719066422385" duration="4003000" />
-      <workItem from="1719109661360" duration="10225000" />
+      <workItem from="1719109661360" duration="11793000" />
     </task>
     <task id="LOCAL-00001" summary="todo implementation">
       <option name="closed" value="true" />
