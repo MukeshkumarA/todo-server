@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ceea60f-a5fd-426a-88e2-db6499e31169" name="Changes" comment="" />
+    <list default="true" id="3ceea60f-a5fd-426a-88e2-db6499e31169" name="Changes" comment="todo implementation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,11 +98,24 @@
       <workItem from="1718947285747" duration="1221000" />
       <workItem from="1719027941392" duration="5910000" />
       <workItem from="1719043340779" duration="1011000" />
-      <workItem from="1719066422385" duration="2137000" />
+      <workItem from="1719066422385" duration="4003000" />
     </task>
+    <task id="LOCAL-00001" summary="todo implementation">
+      <option name="closed" value="true" />
+      <created>1719075308322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719075308322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="todo implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo implementation" />
   </component>
 </project>
