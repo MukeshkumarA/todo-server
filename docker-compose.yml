@@ -1,3 +1,48 @@
+##version: '3.8'
+##
+##services:
+##  app:
+##    image: mukeshkumararumugam/todo-app:0.0.1
+##    ports:
+##      - "8080:8080"
+##    environment:
+##      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+##      SPRING_DATASOURCE_USERNAME: root
+##      SPRING_DATASOURCE_PASSWORD: Mukesh@999
+##      logging.level.root: debug  # Enable debug logging
+##    depends_on:
+##      - db
+##
+##  db:
+##    image: mysql:8.0.27
+##    environment:
+##      MYSQL_ROOT_PASSWORD: Mukesh@999
+##      MYSQL_DATABASE: todo
+##
+#
+#version: '3.8'
+#
+#services:
+#  app:
+#    image: mukeshkumararumugam/todo-app:0.0.1
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+#      SPRING_DATASOURCE_USERNAME: root
+#      SPRING_DATASOURCE_PASSWORD: Mukesh@999
+#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+#      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
+#      logging.level.root: debug  # Enable debug logging
+#    depends_on:
+#      - db
+#
+#  db:
+#    image: mysql:8.0.27
+#    environment:
+#      MYSQL_ROOT_PASSWORD: Mukesh@999
+#      MYSQL_DATABASE: todo
+
 version: '3.8'
 
 services:
@@ -6,16 +51,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Mukesh@999
+      SPRING_DATASOURCE_URL: jdbc:mysql://sql12.freesqldatabase.com:3306/sql12715614?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: sql12715614
+      SPRING_DATASOURCE_PASSWORD: b9WqjFRmTe
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
       logging.level.root: debug  # Enable debug logging
-    depends_on:
-      - db
-
-  db:
-    image: mysql:8.0.27
-    environment:
-      MYSQL_ROOT_PASSWORD: Mukesh@999
-      MYSQL_DATABASE: todo
-
