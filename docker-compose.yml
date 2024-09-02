@@ -43,17 +43,17 @@
 #      MYSQL_ROOT_PASSWORD: Mukesh@999
 #      MYSQL_DATABASE: todo
 
-version: '3.8'
-
-services:
-  app:
-    image: mukeshkumararumugam/todo-app:0.0.1
-    ports:
-      - "8080:8080"
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://sql.freedb.tech:3306/freedb_tododb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
-      SPRING_DATASOURCE_USERNAME: freedb_temptodo
-      SPRING_DATASOURCE_PASSWORD: f7UKKS&y8t3yzvE
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
-      logging.level.root: debug  # Enable debug logging
+#version: '3.8'
+#
+#services:
+#  app:
+#    image: mukeshkumararumugam/todo-app:0.0.1
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      SPRING_DATASOURCE_URL: jdbc:mysql://sql.freedb.tech:3306/freedb_tododb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+#      SPRING_DATASOURCE_USERNAME: freedb_temptodo
+#      SPRING_DATASOURCE_PASSWORD: f7UKKS&y8t3yzvE
+#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+#      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
+#      logging.level.root: debug  # Enable debug logging
