@@ -1,5 +1,0 @@
-com\mk\todo\Controller\TaskController.class
-com\mk\todo\TodoApplication.class
-com\mk\todo\repository\TaskRepository.class
-com\mk\todo\config\CorsConfig.class
-com\mk\todo\entity\Task.class

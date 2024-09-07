@@ -1,59 +1,41 @@
-##version: '3.8'
-##
-##services:
-##  app:
-##    image: mukeshkumararumugam/todo-app:0.0.1
-##    ports:
-##      - "8080:8080"
-##    environment:
-##      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
-##      SPRING_DATASOURCE_USERNAME: root
-##      SPRING_DATASOURCE_PASSWORD: Mukesh@999
-##      logging.level.root: debug  # Enable debug logging
-##    depends_on:
-##      - db
-##
-##  db:
-##    image: mysql:8.0.27
-##    environment:
-##      MYSQL_ROOT_PASSWORD: Mukesh@999
-##      MYSQL_DATABASE: todo
-##
-#
-#version: '3.8'
-#
-#services:
-#  app:
-#    image: mukeshkumararumugam/todo-app:0.0.1
-#    ports:
-#      - "8080:8080"
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/todo?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
-#      SPRING_DATASOURCE_USERNAME: root
-#      SPRING_DATASOURCE_PASSWORD: Mukesh@999
-#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-#      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
-#      logging.level.root: debug  # Enable debug logging
-#    depends_on:
-#      - db
-#
-#  db:
-#    image: mysql:8.0.27
-#    environment:
-#      MYSQL_ROOT_PASSWORD: Mukesh@999
-#      MYSQL_DATABASE: todo
+services:
+  db:
+    image: postgres:13
+    container_name: todo-db
+    environment:
+      POSTGRES_USER: ${DATASOURCE_USERNAME}
+      POSTGRES_PASSWORD: ${DATASOURCE_PASSWORD}
+      POSTGRES_DB: todo
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+    env_file:
+      - .env.prod
+  app:
+    image: mukeshkumararumugam/todo-app:0.0.1
+    container_name: todo-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: ${DATASOURCE_URL}
+      SPRING_DATASOURCE_USERNAME: ${DATASOURCE_USERNAME}
+      SPRING_DATASOURCE_PASSWORD: ${DATASOURCE_PASSWORD}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+      logging.level.root: debug
+      FRONTEND_URL: ${FRONTEND_URL}
+    depends_on:
+      - db
+    networks:
+      - app-network
+    env_file:
+      - .env.prod
 
-#version: '3.8'
-#
-#services:
-#  app:
-#    image: mukeshkumararumugam/todo-app:0.0.1
-#    ports:
-#      - "8080:8080"
-#    environment:
-#      SPRING_DATASOURCE_URL: jdbc:mysql://sql.freedb.tech:3306/freedb_tododb?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
-#      SPRING_DATASOURCE_USERNAME: freedb_temptodo
-#      SPRING_DATASOURCE_PASSWORD: f7UKKS&y8t3yzvE
-#      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-#      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.MySQL8Dialect
-#      logging.level.root: debug  # Enable debug logging
+volumes:
+  db_data:
+
+networks:
+  app-network:

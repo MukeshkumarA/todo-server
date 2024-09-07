@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ceea60f-a5fd-426a-88e2-db6499e31169" name="Changes" comment="todo implementation">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mk/todo/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mk/todo/TodoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mk/todo/TodoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mk/todo/TodoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mk/todo/TodoApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-21T07-12-40_380.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-21T07-25-10_133.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-21T07-55-56_188.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-15-10_874.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-30-00_575.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-31-51_722.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-36-33_308.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-42-43_036.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-44-41_294.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-53-08_727.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-22T10-57-45_008.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-23T09-46-01_747.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-23T09-46-42_528.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-23T19-37-43_519.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-06-23T20-27-12_998.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2024-09-02T11-14-42_762.dumpstream" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mk.todo.TodoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mk.todo.TodoApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mk.todo.TodoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.mk.todo.TodoApplicationTests.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/todo-0.0.1-SNAPSHOT.jar" afterDir="false" />
@@ -64,6 +45,10 @@
     &quot;accountId&quot;: &quot;d0eb9318-9670-4bb7-be19-aacbbbb6ec72&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -124,7 +109,7 @@
   <component name="RunManager">
     <configuration name="TodoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="envFilePaths">
-        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/.env.local" />
       </option>
       <module name="todo" />
       <selectedOptions>
@@ -164,7 +149,11 @@
       <workItem from="1724696341759" duration="2000" />
       <workItem from="1724806345352" duration="4822000" />
       <workItem from="1724843951370" duration="5150000" />
-      <workItem from="1725254422987" duration="1538000" />
+      <workItem from="1725254422987" duration="7668000" />
+      <workItem from="1725288940481" duration="7495000" />
+      <workItem from="1725302332240" duration="19000" />
+      <workItem from="1725340612510" duration="3638000" />
+      <workItem from="1725682907771" duration="10430000" />
     </task>
     <task id="LOCAL-00001" summary="todo implementation">
       <option name="closed" value="true" />
